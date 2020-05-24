@@ -1,0 +1,999 @@
+/* @override http://neu.weingut-meyerhof.de/inhalte/erweiterungen/wp-media-folder/assets/css/style.css?ver=3.5.5 */
+
+
+/**
+ * We developed this code with our hearts and passion.
+ * @package wp-media-folder
+ * @copyright Copyright (C) 2014 JoomUnited (http://www.joomunited.com). All rights reserved.
+ * @license Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+ */
+
+.media-modal .wpmf-attachments-browser {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 300px;
+    overflow: auto;
+    padding: 0 8px;
+    z-index: 10;
+}
+
+.wpmf-attachments-browser .wpmf-attachment{
+    margin: 8px;
+    width: 115px;
+    height: 115px;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0 7px 10px;
+    color: #464646;
+    list-style: none;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wpmf-attachments-browser .wpmf-attachment.ui-hoverClass .wpmf-attachment-preview {
+    border: 3px solid #1e8cbe;
+}
+
+.wpmf-attachments-browser .wpmf-attachment .icon {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20%;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    background: #666;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #444;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .filename {
+    position: absolute;
+    color: #444;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    max-height: 100%;
+    padding: 2px 0;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: 600;
+    background: rgba( 255, 255, 255, 1);
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-edit {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 16px;
+    color: #fafafa
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-delete {
+    position: absolute;
+    right: 4px;
+    top: 22px;
+    font-size: 16px;
+    color: #fafafa
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-edit,
+.wpmf-attachments-browser .wpmf-attachment-preview .wpmficon-delete {
+    display: none;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-edit,
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-delete {
+    display: block;
+    opacity: 0.6;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-edit:hover {
+    display: block;
+    opacity: 1;
+    color: #fff;
+}
+
+.wpmf-attachments-browser .wpmf-attachment-preview:hover .wpmficon-delete:hover {
+    display: block;
+    opacity: 1;
+    color: #fff;
+}
+
+.media-modal .attachments-browser .wpmf-attachments-wrapper .attachments {
+    overflow: hidden;
+    position: relative !important;
+    outline: none;
+}
+
+.media-modal .wpmf-attachments-wrapper {
+    overflow: auto;
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    right: 300px;
+}
+
+.media-frame-toolbar .wpmf-attachments-browser,
+.media-frame-toolbar .wpmf-breadcrumb {
+    display: none;
+}
+
+ul.attachments {}
+
+ul.attachments .attachment {
+    z-index: 110;
+}
+
+.media-modal .wpmf-categories {
+    margin-top: 11px !important;
+    margin-right: 10px;
+}
+
+.wpmf-attachment.ui-draggable-dragging,
+.attachment.ui-draggable-dragging {
+    z-index: 120 !important;
+}
+
+.wpmf-breadcrumb {
+    display: block;
+    left: 0;
+    right: 300px;
+    overflow: auto;
+    margin: 0;
+    z-index: 10;
+    margin-left: 15px;
+}
+
+.wpmf-breadcrumb li {
+    display: inline;
+}
+
+.wpmf-breadcrumb,
+.wpmf-breadcrumb a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.wpmf-dragging {
+    z-index: 130;
+}
+
+span.draggableNumber {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 12px;
+    color: #ffffff;
+    border: 2px solid #888888;
+    background-color: #888888;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.upload-php .wpmf-clear {
+    clear: left;
+}
+
+.media-selection {
+    right: 380px;
+}
+
+.media-frame.mode-grid .media-toolbar-secondary .delete-selected-button {
+    margin-right: 10px !important;
+}
+
+.wpmf-move-header {
+    width: 20px;
+}
+
+.wpmf-move {
+    cursor: pointer;
+    font-size: 30px !important;
+}
+
+.wpmf-move.selected {
+    color: #2ea2cc;
+}
+
+.wpmf-move:hover {
+    color: #515151;
+}
+
+.wpmf-move:hover.selected {
+    color: #1084AE;
+}
+
+.media-frame.mode-grid .wpmf-attachments-wrapper {
+    margin-top: -10px;
+}
+
+.media-frame.mode-grid .wpmf-attachments-browser {
+    margin-top: 10px;
+}
+
+#posts-filter .wpmf-attachments-wrapper {
+    margin-left: -10px;
+}
+
+#posts-filter .wpmf-attachments-browser {
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?137reo');
+    src: url('../fonts/icomoon.eot?#iefix137reo') format('embedded-opentype'), url('../fonts/icomoon.woff?137reo') format('woff'), url('../fonts/icomoon.ttf?137reo') format('truetype'), url('../fonts/icomoon.svg?137reo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wpmf-attachment [class^="icon-"],
+.wpmf-attachment [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+.icon-Drag_and_Drop:before {
+        content: "\e600";
+}*/
+
+.menu-left {
+    width: 150px;
+    height: 200px;
+    float: left;
+    padding: 8px;
+    position: relative;
+}
+
+.upload-php .media-frame-content .wpmf-attachments-wrapper .wpmf-attachments-browser {
+    width: 75%;
+    float: left;
+}
+
+.compat-field-wpmf_gallery_custom_image_link input.text {
+    width: 77% !important;
+    float: left;
+}
+
+
+/*#wp-wpmf-editor-wrap{
+    display: none !important;
+}*/
+
+.compat-item span.alignleft {
+    font-size: 12px;
+}
+
+.media-modal .media-sidebar .setting span {
+    margin: 0 !important;
+    margin-right: 3% !important;
+    padding-top: 8px !important;
+}
+
+.upload-php .media-frame-content {
+    overflow: auto !important;
+}
+
+.upload-php .mode-eml-bulk-edit .attachments-browser .attachments {
+    position: absolute !important;
+    overflow: auto !important;
+}
+
+#wpmf-display-media-filters {
+    display: none !important;
+}
+
+.mode-grid .addFolder,
+#addFolder {
+    margin-top: 10px !important;
+}
+
+.div_displaymedia {
+    float: left;
+    display: none;
+}
+
+.media-frame.hide-router .media-toolbar .attachment-filters {
+    display: none;
+}
+
+.media-frame.hide-router .wpmf-attachments-wrapper {
+    top: 50px;
+}
+
+.eml-grid .media-frame.hide-router .wpmf-attachments-wrapper {
+    top: 0;
+    position: absolute;
+}
+
+.eml-grid ul.attachments{
+    position: static !important;
+}
+
+.div_displaymedia {
+    max-height: 50px;
+}
+
+#wp-media-grid #media-order-folder,
+#wp-media-grid #media-order-media {
+    margin-bottom: 10px !important;
+}
+
+html[dir="rtl"] .media-modal .wpmf-attachments-wrapper,
+html[dir="rtl"] .media-modal .wpmf-attachments-wrapper .wpmf-attachments-browser {
+    right: 0;
+    left: 300px;
+}
+
+html[dir="rtl"] .mode-grid .div_displaymedia,
+html[dir="rtl"] #jao,
+html[dir="rtl"] .upload-php .media-frame-content .wpmf-attachments-browser,
+html[dir="rtl"] .wpmf-attachments-browser .wpmf-attachment,
+html[dir="rtl"] .upload-php .attachments-browser .attachments {
+    float: right !important;
+}
+
+html[dir="rtl"] .upload-php .attachments-browser ul.attachments {
+    width: 100%;
+}
+
+html[dir="rtl"] .media-frame .div_displaymedia {
+    float: right;
+}
+
+@media screen and (max-width: 1368px) {
+    .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper {
+        right: 700px;
+        top: 225px;
+    }
+    html[dir="rtl"] .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper {
+        left: 700px;
+        top: 225px;
+    }
+
+    .media-modal .attachments-browser .media-toolbar-secondary {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .media-modal .wpmf-attachments-wrapper{
+        top:150px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .wp-filter .media-toolbar-primary, .wp-filter .media-toolbar-secondary, .wp-filter .search-form {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 869px) {
+    .wp-filter .search-form {
+        float: right;
+        margin: 100px 0px 10px 0px !important;
+    }
+    .mode-grid .addFolder {
+        margin-top: 0px !important;
+    }
+    .div_displaymedia {
+        width: 100%;
+    }
+
+    .media-modal .wpmf-attachments-wrapper{
+        top:150px;
+    }
+}
+
+@media only screen and (max-width: 684px) {
+    .wp-filter .search-form {
+        float: right;
+        margin: 200px 0px 10px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 640px),
+screen and (max-height: 400px) {
+    .media-modal .wpmf-attachments-wrapper {
+        right: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .media-modal .attachments-browser .media-toolbar-secondary {
+        min-width: 80%;
+    }
+    .media-modal .wpmf-attachments-wrapper{
+        top:100px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .media-modal .attachments-browser .media-toolbar-secondary {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .media-modal .attachments-browser .media-toolbar-secondary {
+        min-width: 100%;
+    }
+    .media-modal .wpmf-attachments-wrapper{
+        top:100px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper {
+        right: 700px;
+        top: 150px;
+    }
+    html[dir="rtl"] .media-modal.wp-core-ui.acf-expanded .wpmf-attachments-wrapper {
+        left: 700px;
+        top: 150px;
+    }
+
+    .media-modal .wpmf-attachments-wrapper{
+        top:50px;
+    }
+}
+
+.media-modal select.attachment-filters {
+    /*float: left !important;*/
+    width: auto !important;
+}
+
+.media-button-wpmf_reverse_gallery {
+    display: none !important;
+}
+
+#media-attachment-filters {
+    display: none !important;
+}
+
+.wpmediacategory-filter{
+    display: block !important;
+}
+
+.attachments-browser .media-toolbar {
+    height: auto !important;
+}
+
+.media-modal .addFolder {
+    margin-top: 10px !important;
+}
+
+.wpmfcountfiles {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-weight: bold;
+}
+
+.wpmf_newfolder_input,.wpmf_remote_video_input {
+    width: 100%;
+}
+
+.wpmf-snackbar {
+    display: none;
+}
+
+.wpmf-snackbar-content {
+    line-height: 24px;
+}
+
+.wpmf-snackbar-content a {
+    color: #0085BA;
+}
+
+.wpmf-material-icons-clear {
+    float: right;
+}
+
+.wpmf_count_file_tree {
+    display: inline-block;
+    background-color: #888888;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 5px 0 0;
+    vertical-align: top;
+    border-radius: 3px;
+    z-index: 26;
+}
+
+.wpmf_count_file_tree span {
+    display: block;
+    padding: 0 6px;
+}
+
+#wpmf_preview_image {
+    min-width: 150px;
+    position: absolute;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding: 5px;
+    display: none;
+    color: #666;
+    z-index: 999999;
+}
+
+#wpmf_preview_image .bottomlegend {
+    width: 100%;
+    max-width: 300px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float: left;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#wpmf_preview_image .bottomlegend_filename{
+    float:left;
+    width:94%;
+    font-weight:bold;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#wpmf_preview_image .bottomlegend_filetitle{
+    float:left;
+    width:94%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.wpmficonsort,
+.wpmf_reset_filter,
+.wpmficonsortselected,
+.wpmf_person_outline{
+    float: left;
+    margin: 10px 5px 0px 5px;
+    color: #666;
+}
+
+.wpmficonsort,.wpmficonsortselected{
+    margin-left: 0;
+}
+
+.wpmf_person_outline.wpmfselected{
+    margin-top: 12px;
+    font-size: 27px !important;
+    background: #ddd;
+}
+
+.wpmficonsortselected {
+    background: #ddd;
+}
+
+.wpmficonsortselected {
+    font-size: 27px !important;
+    margin-top: 13px;
+}
+
+.wpmficonsort,
+.wpmf_reset_filter,
+.wpmf_person_outline{
+    font-size: 30px !important;
+}
+
+#wpmf-reset-all-filters {
+    display: none;
+}
+
+.wpmf_do_undofilter,
+.wpmf_do_undo,
+.wpmf_refesh_image {
+    margin-left: 25px;
+}
+
+.snackbar-container .snackbar[data-wpmftype="fileupload"] {
+    position: relative;
+}
+
+.wpmfliner_progress.linear-activity {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+.determinate {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    -webkit-transition: width 500ms ease-out 1s;
+    -moz-transition: width 500ms ease-out 1s;
+    -o-transition: width 500ms ease-out 1s;
+    transition: width 500ms ease-out 1s;
+    background-color: #03A9F4;
+}
+
+.wpmfliner_progress.linear-activity .indeterminate {
+    position: relative;
+    height: 100%;
+    background-color: #03A9F4;
+}
+
+/* liner process when remove folder */
+
+.wpmfdeletefolderprogress {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    background-clip: padding-box;
+    overflow: hidden; }
+.wpmfdeletefolderprogress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: #26a69a;
+    transition: width .3s linear; }
+.wpmfdeletefolderprogress .indeterminate {
+    background-color: #03A9F4; }
+.wpmfdeletefolderprogress .indeterminate:before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+.wpmfdeletefolderprogress .indeterminate:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s; }
+
+@-webkit-keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%; }
+    60% {
+        left: 100%;
+        right: -90%; }
+    100% {
+        left: 100%;
+        right: -90%; } }
+@keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%; }
+    60% {
+        left: 100%;
+        right: -90%; }
+    100% {
+        left: 100%;
+        right: -90%; } }
+@-webkit-keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%; }
+    60% {
+        left: 107%;
+        right: -8%; }
+    100% {
+        left: 107%;
+        right: -8%; } }
+@keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%; }
+    60% {
+        left: 107%;
+        right: -8%; }
+    100% {
+        left: 107%;
+        right: -8%; } }
+
+/* ================================ */
+
+.view-switch a::before {
+    color: #666 !important;
+}
+
+.view-switch a.current::before {
+    color: #0073aa !important;
+}
+
+.media-modal .attachments-browser .attachments, .media-modal .attachments-browser .uploader-inline {
+    top: 0px !important;
+}
+
+.wpmf_wrap_icon_filter{
+    float: left;
+}
+
+.wpmfclosedlg{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.wpmfsetting{
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 1px 0;
+    font-size: 13px;
+}
+
+.wpmfjaoassign_row{
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 1px 0;
+    font-size: 13px;
+}
+
+.wpmfjaoassign_row .wpmfjaoassign_left{
+    float: left;
+    min-height: 22px;
+    padding-top: 8px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #666;
+    min-width: 30%;
+    margin-right: 4%;
+    font-size: 12px;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+.wpmfjaoassign_row .wpmfjaoassign_right{
+    text-align: left;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: #fff;
+    float: left;
+}
+
+.upload-php .wpmfjaoassign_row .wpmfjaoassign_right{
+    margin-left: 5px;
+}
+
+.wpmfjaoassign_right a{
+    text-decoration: none;
+    color: #666;
+}
+
+.wpmf_popup_tree .white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    height: 300px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.wpmf_popup_tree {
+    z-index: 999999999999;
+}
+
+.open-popup-tree{
+    cursor: pointer;
+}
+
+.media-toolbar-secondary .open-popup-tree-multiple{
+    margin: 11px 0px;
+}
+
+.media-frame.mode-select .open-popup-tree-multiple{
+    display: inline-block !important;
+}
+
+.media-frame.mode-edit .open-popup-tree-multiple{
+    display: none !important;
+}
+
+.open-popup-tree .zmdi-folder , .open-popup-tree-multiple .zmdi-folder{
+    font-size: 16px !important;
+    margin-right: 5px;
+    color:#888888
+}
+
+.wpmf_checkbox_tree{
+    margin: 0 !important;
+}
+
+/* Checkbox input */
+@import "https://fonts.googleapis.com/css?family=Raleway";
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:focus + label:before,
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:hover + label:before{
+    border-color: #2196F3;
+    background-color: #f2f2f2;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:active + label:before{
+    transition-duration: 0s;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 2em;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"] + label:before{
+    box-sizing: content-box;
+    content: '';
+    color: #2196F3;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -9px;
+    border: 2px solid #2196F3;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"] + label:after{
+    box-sizing: content-box;
+    content: '';
+    background-color: #2196F3;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    transform: scale(0);
+    transform-origin: 50%;
+    transition: transform 200ms ease-out;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:disabled + label:before{
+    border-color: #cccccc;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:disabled:focus + label:before,
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:disabled:hover + label:before{
+    background-color: inherit;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:disabled:checked + label:before{
+    background-color: #cccccc;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"] + label:after{
+    background-color: transparent;
+    top: 50%;
+    left: 4px;
+    width: 8px;
+    height: 3px;
+    margin-top: -4px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0 0 3px 3px;
+    border-image: none;
+    transform: rotate(-45deg) scale(0);
+}
+#wpmfjaoassign.pure-checkbox input[type="checkbox"]:checked + label:after{
+    content: '';
+    transform: rotate(-45deg) scale(1);
+    transition: transform 200ms ease-out;
+}
+
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:checked + label:before{
+    animation: borderscale 200ms ease-in;
+    background: #2196F3;
+}
+#wpmfjaoassign .pure-checkbox input[type="checkbox"]:checked + label:after{
+    transform: rotate(-45deg) scale(1);
+}
+@keyframes borderscale {
+    50% {
+        box-shadow: 0 0 0 2px #4f8196;
+    }
+}
+
+#wpmfjaoassign .pure-checkbox .ppp{
+    width: 6px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    top: 28%;
+    left: 6px;
+    display: none;
+}
+
+#wpmfjaoassign .pure-checkbox .pchecked .ppp{
+    display: block;
+}
+
+.wpms_btn_remote_video{
+    font-size: 14px;
+    height: 46px;
+    line-height: 48px;
+    padding: 12px 36px;
+    color: #32373c !important;
+    border-color: #cccccc;;
+    background: #f7f7f7;
+    box-shadow: 0 2px 0 #cccccc;
+    vertical-align: top;
+    margin: 0;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    z-index: 1;
+}
+
+.wpmf_remote_video{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+}
+
+.wpmf_icon_remote_video{
+    font-size: 27px !important;
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #666666;
+}
+
+.media-frame-uploader.wpmfdragfiles .uploader-window{
+    left: 100% !important;
+}

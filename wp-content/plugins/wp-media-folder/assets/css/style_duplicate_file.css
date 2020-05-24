@@ -1,0 +1,26 @@
+.wpmf_wrap_duplicate , .wpmf_message_duplicate {
+    width: 100%;
+    float: left;
+}
+
+.wpmf_wrap_duplicate{
+    padding:10px;
+}
+
+.wpmf_message_duplicate .updated{
+    color: #0073aa;
+    margin : 5px 0px !important;
+}
+
+.wpmf_message_duplicate .error{
+    color: #bc0b0b;
+    margin : 5px 0px !important;
+}
+
+.wpmf_btn_duplicate {
+    float: left;
+}
+
+.wpmf_spinner_duplicate {
+    float: left;
+}
