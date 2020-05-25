@@ -35,11 +35,8 @@
 
                 <!-- start menu mobile  -->
                 <div class="topnav" id="myTopnav">
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon"
-                        onclick="myFunction()">&#9776;</a>
-                    <a>
 
-                        <?php
+                    <?php
                         //menu location
                         $args = array(
                             'theme_location' => 'head',
